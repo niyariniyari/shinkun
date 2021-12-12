@@ -1,0 +1,31 @@
+<html>
+  <head>
+  </head>
+  <body>
+      <link href="css/duckc.css" rel="stylesheet">
+  <nav>
+      <ul class="gnavi">
+           <li><a href="#">HOME</a></li>
+           <li class="current"><a href="/mischief/duckplay">Duck</a></li>
+           <li><a href="#">準備中</a></li>
+           <li><a href="#">準備中</a></li>
+           <li><a href="#">準備中</a></li>
+      </ul>
+  </nav>
+  <input type="button" value="Start" id="btnTimer">
+  <input type="number" id="message">
+  <audio id="oliver" src="https://drive.google.com/uc?id=180Ukck4Yo8sJ8RXoIhlMK_STvlTM6mRH"></audio>
+  <script>
+  const bgm1 = document.querySelector("#oliver"); 
+  let timerid;
+  let btntimer = document.getElementById('btnTimer');
+  btnTimer.addEventListener('click', function(){
+     const t1 = document.getElementById("message").value;
+     var t3 = (t1 * 1000);
+     timerid = window.setTimeout(function(){
+         bgm1.play();
+     }, t3);
+ });
+  </script>
+  </body>
+  </html>
