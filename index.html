@@ -22,6 +22,7 @@
   btnTimer.addEventListener('click', function(){
      const t1 = document.getElementById("message").value;
      var t3 = (t1 * 1000);
+     bgm1.load();
      timerid = window.setTimeout(function(){
          bgm1.play();
      }, t3);
