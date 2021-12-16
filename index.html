@@ -18,7 +18,7 @@
   <audio  id="kyojin" src="https://drive.google.com/uc?id=1cnNCUSLyqlZKhmXLF54fp-4JDctIlanw"></audio>
   <script>
   const bgm1 = document.querySelector("#oliver"); 
-  const bgm2 = document.pueryselector("#kyojin");
+  const bgm2 = document.queryselector("#kyojin");
   let timerid;
   let btntimer = document.getElementById('btnTimer');
   btnTimer.addEventListener('click', function(){
@@ -34,7 +34,7 @@
     var key_code = event.keyCode;
     
     if ( key_code === 72 ) bgm2.play();
-    
+  }
   </script>
   </body>
   </html>
