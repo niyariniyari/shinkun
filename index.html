@@ -19,26 +19,6 @@
   <script>
   const bgm1 = document.querySelector("#oliver"); 
   const bgm2 = document.querySelector("#kyojin");
-  function blurFunction(){
-    function nowtime(){
-    let today = new Date();
-    }
-    setInterval('nowtime()', 1000)
-    let value_today = new Date();
-    let start_time = document.getElementById("time").value;
-    if (start_time != ""){
-      let hour_mins = start_time.split(":");
-      let hour = hour_mins[0];
-      let mins = hour_mins[1];
-      value_today.setHours(Number(hour));
-      value_today.setMinutes(Number(mins));
-    function ihu(){
-      if (value_today == today){
-        alert("konnitiha");
-      }
-     setInterval('ihu()', 1000)
-    }
-  } ;
     
   addEventListener("keydown", keydownfunc);
   function keydownfunc(event){
