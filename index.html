@@ -15,10 +15,10 @@
   <input type="button" value="Start" id="btnTimer">
   <input type="number" id="message">
   <audio id="oliver" src="https://drive.google.com/uc?id=180Ukck4Yo8sJ8RXoIhlMK_STvlTM6mRH"></audio>
-  <audio src="https://drive.google.com/uc?id=1cnNCUSLyqlZKhmXLF54fp-4JDctIlanw" accesskey="m"></audio>
-
+  <audio  id="kyojin" src="https://drive.google.com/uc?id=1cnNCUSLyqlZKhmXLF54fp-4JDctIlanw"></audio>
   <script>
   const bgm1 = document.querySelector("#oliver"); 
+  const bgm2 = document.pueryselector("#kyojin");
   let timerid;
   let btntimer = document.getElementById('btnTimer');
   btnTimer.addEventListener('click', function(){
@@ -29,6 +29,12 @@
          bgm1.play();
      }, t3);
  });
+  document.onekeydown = event;
+  if (event.key="m")
+  { 
+    bgm2.play();
+  }
+    
   </script>
   </body>
   </html>
