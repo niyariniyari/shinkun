@@ -13,18 +13,31 @@
       </ul>
   </nav>
   <input type="button" value="Start" id="btnTimer">
-  <input type="text" id="time" onblur="blurFunction()">
+  <input type="text" id="message" onblur="blurFunction()">
   <audio id="oliver" src="https://drive.google.com/uc?id=180Ukck4Yo8sJ8RXoIhlMK_STvlTM6mRH"></audio>
   <audio  id="kyojin" src="https://drive.google.com/uc?id=1cnNCUSLyqlZKhmXLF54fp-4JDctIlanw"></audio>
+  <audio id="puri" src="https://drive.google.com/uc?id=1tyMKFhDC7GgzP52XX7xEZNi66cpNdI9U"></audio>
   <script>
   const bgm1 = document.querySelector("#oliver"); 
   const bgm2 = document.querySelector("#kyojin");
+  const bgm3 = document.querySelector("#puri");
+  
+  let timerid;
+  let btntimer = document.getElementById('btnTimer');
+  btnTimer.addEventListener('click', function(){
+     const t1 = document.getElementById("message").value;
+     var t3 = (t1 * 1000);
+     timerid = window.setTimeout(function(){
+         bgm1.play();
+     }, t3);
+ });
     
   addEventListener("keydown", keydownfunc);
   function keydownfunc(event){
     var key_code = event.keyCode;
     
     if ( key_code === 72 ) bgm2.play();
+    if ( key_code === 80 ) bgm3.play();
   }
   </script>
   </body>
