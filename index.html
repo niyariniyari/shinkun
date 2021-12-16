@@ -29,11 +29,11 @@
          bgm1.play();
      }, t3);
  });
-  document.onekeydown = event;
-  if (event.key="m")
-  { 
-    bgm2.play();
-  }
+  addEventListener("keydown", keydownfunc);
+  function keydownfunc(event){
+    var key_code = event.keyCode;
+    
+    if ( key_code === 72 ) bgm2.play();
     
   </script>
   </body>
