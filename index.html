@@ -20,7 +20,9 @@
   const bgm1 = document.querySelector("#oliver"); 
   const bgm2 = document.querySelector("#kyojin");
   function blurFunction(){
+    while(true){
     let today = new Date();
+    }
     let value_today = new Date();
     let start_time = document.getElementById("time").value;
     if (start_time != ""){
@@ -29,9 +31,11 @@
       let mins = hour_mins[1];
       value_today.setHours(Number(hour));
       value_today.setMinutes(Number(mins));
-       if (value_today.equals(today)){
+      while (true){ 
+      if (value_today.equals(today)){
          alert("時間です");
-      }
+       }
+      }  
     }
   } ;
     
