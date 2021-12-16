@@ -17,10 +17,14 @@
   <audio id="oliver" src="https://drive.google.com/uc?id=180Ukck4Yo8sJ8RXoIhlMK_STvlTM6mRH"></audio>
   <audio  id="kyojin" src="https://drive.google.com/uc?id=1cnNCUSLyqlZKhmXLF54fp-4JDctIlanw"></audio>
   <audio id="puri" src="https://drive.google.com/uc?id=1tyMKFhDC7GgzP52XX7xEZNi66cpNdI9U"></audio>
+  <audio id="payphone" src="https://drive.google.com/uc?id=1_xprYz9s0xnBJohQNQ3O3YJDKP3TR15E"></audio>
+  <audio id="winop" src="https://drive.google.com/uc?id=15NkZwfMFa2oYNSoJ_lVRuu99icI0YmnA"></audio>
   <script>
   const bgm1 = document.querySelector("#oliver"); 
   const bgm2 = document.querySelector("#kyojin");
   const bgm3 = document.querySelector("#puri");
+  const bgm4 = document.querySelestor("#payphone");
+  const bgm5 = document.querySelector("#winop");
   
   let timerid;
   let btntimer = document.getElementById('btnTimer');
@@ -38,6 +42,8 @@
     
     if ( key_code === 72 ) bgm2.play();
     if ( key_code === 80 ) bgm3.play();
+    if ( key_code === 79 ) bgm4.play();
+    if ( key_code === 87 ) bgm5.play();
   }
   </script>
   </body>
