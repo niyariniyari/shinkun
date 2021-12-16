@@ -44,7 +44,7 @@ a{
 .gnavi li a:hover::after {
     transform: scale(1, 1);/*X方向にスケール拡大*/
 }
-#message{
+#time{
    background-color: lemonchiffon;
    border-radius: 6px;
    width: 50%;
