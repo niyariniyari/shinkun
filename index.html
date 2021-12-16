@@ -13,22 +13,28 @@
       </ul>
   </nav>
   <input type="button" value="Start" id="btnTimer">
-  <input type="number" id="message">
+  <input type="text" id="time" onblur="blurFunction()">
   <audio id="oliver" src="https://drive.google.com/uc?id=180Ukck4Yo8sJ8RXoIhlMK_STvlTM6mRH"></audio>
   <audio  id="kyojin" src="https://drive.google.com/uc?id=1cnNCUSLyqlZKhmXLF54fp-4JDctIlanw"></audio>
   <script>
   const bgm1 = document.querySelector("#oliver"); 
   const bgm2 = document.querySelector("#kyojin");
-  let timerid;
-  let btntimer = document.getElementById('btnTimer');
-  btnTimer.addEventListener('click', function(){
-     const t1 = document.getElementById("message").value;
-     var t3 = (t1 * 1000);
-     bgm1.load();
-     timerid = window.setTimeout(function(){
-         bgm1.play();
-     }, t3);
- });
+  function blurFunction(){
+    let today = new Date();
+    let value_today = new Date();
+    let start_time = document.getElementById("time").value;
+    if (start_time != ""){
+      let hour_mins = start_time.split(":");
+      let hour = hour_mins[0]
+      let mins = hour_mins[1]
+      value_today.setHours(Number(hour));
+      value_today.setMinutes(Number(mins));
+      if (value_today === today){
+        bgm1.play();
+      }
+    }
+  } 
+    
   addEventListener("keydown", keydownfunc);
   function keydownfunc(event){
     var key_code = event.keyCode;
