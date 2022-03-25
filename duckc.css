@@ -6,13 +6,13 @@ nav{
   box-sizing: border-box;
 }
 conpany{
-  animation-name:nameanime;
-  animation-fill-mode:backwards;
-  animation-duaration:3s;
-  animation-iteration-count:infinite;
-  animation-timing-function:ease;
-  animetion-delay:3s;
-  animetion-direction:normal;
+  animation-name:　nameanime;
+  animation-fill-mode: backwards;
+  animation-duaration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animetion-delay: 3s;
+  animetion-direction:　normal;
 }
 
 @nameanime fadeaInAnime{
