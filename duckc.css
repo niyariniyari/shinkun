@@ -5,7 +5,7 @@ nav{
   padding-top: 5px;
   box-sizing: border-box;
 }
-.conpany{
+conpany{
   animation-name:nameanime;
   animation-fill-mode:backwards;
   animation-duaration:3s;
