@@ -12,6 +12,7 @@ nav{
   animation-iteration-count:infinite;
   animation-timing-function:ease;
   animetion-delay:3s;
+  animetion-direction:normal;
 }
 
 @nameanime fadeaInAnime{
