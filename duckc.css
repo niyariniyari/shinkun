@@ -5,6 +5,24 @@ nav{
   padding-top: 5px;
   box-sizing: border-box;
 }
+.conpany{
+  animation-name:nameanime;
+  animation-fill-mode:backwards;
+  animation-duaration:3s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease;
+  animetion-delay:3s;
+}
+
+@nameanime fadeaInAnime{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+  
 ul{
   display: flex;
 }
