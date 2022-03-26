@@ -1,4 +1,4 @@
-.fadeIn {
+.conpany {
 animation-name: fadeInAnime;/*1で解説*/
 animation-fill-mode:backwards;/*2で解説*/
 animation-duration:3s;/*3で解説*/
